@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "description": "Synthetic loan products for a portfolio simulation. Not real products, rates or criteria of any bank.",
+    "synthetic": true,
+    "currency": "GBP",
+    "version": "1.0",
+    "last_updated": "2026-11-01"
+  },
+  "products": [
+    {
+      "id": "SPL",
+      "name": "Small Personal Loan",
+      "min_amount": 1000,
+      "max_amount": 7499,
+      "min_term_months": 12,
+      "max_term_months": 60,
+      "representative_apr": 19.9,
+      "apr_by_credit_band": { "A": 12.9, "B": 16.9, "C": 19.9, "D": 26.9 },
+      "allowed_purposes": ["car", "home_improvement", "holiday", "wedding", "other_personal"],
+      "arrangement_fee": 0,
+      "early_repayment_note": "You can repay early at any time. A charge of up to 58 days' interest may apply.",
+      "policy_source": "fees_and_early_repayment.md"
+    },
+    {
+      "id": "PL",
+      "name": "Personal Loan",
+      "min_amount": 7500,
+      "max_amount": 25000,
+      "min_term_months": 12,
+      "max_term_months": 84,
+      "representative_apr": 6.9,
+      "apr_by_credit_band": { "A": 6.4, "B": 6.9, "C": 9.9, "D": 14.9 },
+      "allowed_purposes": ["car", "home_improvement", "holiday", "wedding", "other_personal"],
+      "arrangement_fee": 0,
+      "early_repayment_note": "You can repay early at any time. A charge of up to 58 days' interest may apply.",
+      "policy_source": "fees_and_early_repayment.md"
+    },
+    {
+      "id": "DCL",
+      "name": "Debt Consolidation Loan",
+      "min_amount": 5000,
+      "max_amount": 35000,
+      "min_term_months": 24,
+      "max_term_months": 84,
+      "representative_apr": 9.9,
+      "apr_by_credit_band": { "A": 7.9, "B": 9.9, "C": 14.9, "D": 21.9 },
+      "allowed_purposes": ["debt_consolidation"],
+      "arrangement_fee": 0,
+      "early_repayment_note": "You can repay early at any time. A charge of up to 58 days' interest may apply.",
+      "policy_source": "fees_and_early_repayment.md"
+    }
+  ]
+}
